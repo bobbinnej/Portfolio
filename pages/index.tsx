@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from '../components/Header'
 
 
 export default function Home() {
@@ -8,7 +9,19 @@ export default function Home() {
         <title>Jackies Portfolio</title>      
       </Head>
 
-      <h1 className='text-blue-800'>Lets do this</h1>
+      {/**Header section */}
+        <Header/>
+      {/**Hero section */}
+
+      {/**About section */}
+
+      {/**Experience section */}
+
+      {/**Skills section */}
+
+      {/**Projects section */}
+
+      {/**Contact me section */}
 
     </div>
   )
