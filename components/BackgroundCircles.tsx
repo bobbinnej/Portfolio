@@ -22,8 +22,8 @@ export default function BackgroundCircles({}: Props) {
          mt-52 animate-pulse opacity-20 '/>
         <div className='rounded-full border border-[#333333] h-[300px] w-[300px]
         absolute mt-52 opacity-10  animate-pulse'/>
-        <div className=' rounded-full border border-[#F7AB] h-[500px] w-[500px]
-        absolute mt-52 animate-pulse opacity-20'/>
+        <div className=' border border-[#F7AB] h-[400px] w-[415px]
+        absolute mt-60 animate-pulse opacity-20 hidden sm:inline-flex'/>
       
        
     </motion.div>
