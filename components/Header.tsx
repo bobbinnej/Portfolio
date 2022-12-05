@@ -5,9 +5,9 @@ type Props = {}
 
 export default function Header({}: Props) {
   return (
-    <div className='sticky top-0'>
+    <div className='sticky top-0 '>
         <header className=' flex items-start justify-between max-w-3xl mx-auto
-        z-20 xl:items-center p-5'>
+        z-20 xl:items-center p-5 cursor-pointer '>
 
             {/**social icons section */}
               <motion.div
