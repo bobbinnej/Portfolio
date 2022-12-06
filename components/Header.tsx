@@ -7,7 +7,7 @@ export default function Header({}: Props) {
   return (
     <div className='sticky top-0 '>
         <header className=' flex items-start justify-between max-w-3xl mx-auto
-        z-20 xl:items-center p-5 cursor-pointer '>
+        z-20 xl:items-center p-5  '>
 
             {/**social icons section */}
               <motion.div
@@ -26,7 +26,7 @@ export default function Header({}: Props) {
               }}
 
 
-               className='flex flex-row items-center'>
+               className='flex flex-row items-center '>
               <SocialIcon 
               url="https://twitter.com/bobbinnej"
               fgColor='gray' 
