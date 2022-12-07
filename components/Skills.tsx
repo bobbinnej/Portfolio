@@ -16,7 +16,7 @@ export default function Skills({}: Props) {
         duration:1.5
     }}
       className="h-screen relative flex flex-col xl:flex-row
-    md:text-left text-center  max-w-[2000px] justify-center xl:space-y-0
+    md:text-left text-center  max-w-[2000px] justify-evenly xl:space-y-0
     mx-auto items-center"
     >
       <h3

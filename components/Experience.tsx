@@ -15,7 +15,7 @@ export default function Experience({}: Props) {
     transition={{
         duration:1.5
     }}
-     className=' relative flex flex-col items-center
+     className='h-screen relative flex flex-col items-center
     overflow-hidden text-left md:flex-row max-w-full px-10 mx-auto 
     justify-evenly  '>
        

@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import Experience from '../components/Experience'
 import Skills from '../components/Skills'
+import Projects from '../components/Projects'
 
 export default function Home() {
   return (
@@ -27,17 +28,18 @@ export default function Home() {
       </section>
 
       
-       <section id='experience' className='snap-center'>
+       <section id='experience' className='snap-center '>
         <Experience/>
        </section>
-      {/**Skills section */}
-      <section id='skills' className='snap-start '>
+      
+      <section id='skills' className='snap-center '>
         <Skills />
       </section >
       
-
       {/**Projects section */}
-
+       <section id='projects' className='snap-start'>
+        <Projects/>
+       </section>
       {/**Contact me section */}
 
     </div>
