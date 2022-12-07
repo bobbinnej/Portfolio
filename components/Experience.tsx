@@ -16,7 +16,8 @@ export default function Experience({}: Props) {
         duration:1.5
     }}
      className=' relative flex flex-col items-center
-    overflow-hidden text-left md:flex-row max-w-full px-10 mx-auto justify-evenly'>
+    overflow-hidden text-left md:flex-row max-w-full px-10 mx-auto 
+    justify-evenly  '>
        
         <h3 className='text-gray-500 tracking-[18px] absolute top-24 uppercase
           text-sm  xl:text-2xl  md:text-2xl xl:tracking-[20px] md:tracking-[20px]'>Experience</h3>
