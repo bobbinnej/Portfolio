@@ -17,7 +17,7 @@ export default function About({}: Props) {
 
     
     
-    className='h-screen flex flex-col relative
+    className=' h-[800px]  xl:h-[1000px] md:h-screen flex flex-col relative
     text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly 
     mx-auto items-center'>
         <h3 className='uppercase tracking-[18px] absolute top-24 text-gray-500 

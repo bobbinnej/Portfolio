@@ -15,7 +15,7 @@ export default function Skills({}: Props) {
     transition={{
         duration:1.5
     }}
-      className="h-screen relative flex flex-col xl:flex-row
+      className=" h-screen relative flex flex-col xl:flex-row
     md:text-left text-center  max-w-[2000px] justify-evenly xl:space-y-0
     mx-auto items-center"
     >
