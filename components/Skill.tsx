@@ -7,7 +7,8 @@ type Props = {
 export default function 
 ({directionLeft}: Props) {
   return (
-    <div className='cursor pointer flex group relative top-20'>
+    <div className='cursor pointer flex group relative 
+    xl:top-[220px]  top-40 '>
       <motion.img
       initial={{
         x: directionLeft ? -200:200,
@@ -23,7 +24,7 @@ export default function
 
       src='https://cdn-icons-png.flaticon.com/128/246/246185.png'
       className='rounded-full w-20 h-20 object-cover border border-gray-500
-      xl:h-30 xl:w-30  md:h-30 md:w-30 filter group-hover:grayscale transition duration-100 ease-in-out'
+      xl:h-[100px] xl:w-[100px]  md:h-[180px] md:w-[180px] filter group-hover:grayscale transition duration-100 ease-in-out'
       />
       <div className='absolute opacity-0 group-hover:opacity-80
       transition duration-100 ease-in-out group-hover:bg-white 

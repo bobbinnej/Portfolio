@@ -32,7 +32,7 @@ export default function Home() {
         <Experience/>
        </section>
       
-      <section id='skills ' className='snap-start '>
+      <section id='skills' className='snap-start '>
         <Skills />
       </section >
       
