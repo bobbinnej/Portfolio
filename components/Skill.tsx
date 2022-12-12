@@ -28,7 +28,7 @@ export default function
       />
       <div className='absolute opacity-0 group-hover:opacity-80
       transition duration-100 ease-in-out group-hover:bg-white 
-       h-20 w-20 xl:h-30 xl:w-30 md:h-30 md:w-30 rounded-full
+       h-20 w-20 xl:h-[100px] xl:w-[100px] md:h-[180px] md:w-[180px] rounded-full
        z-0 '>
       <div className='flex items-center justify-center h-full'>
         <p className='font-bold text-black opacity-20 text-2xl'>100%</p>
