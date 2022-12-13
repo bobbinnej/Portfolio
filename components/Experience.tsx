@@ -25,7 +25,8 @@ export default function Experience({}: Props) {
 
        {/*Experience cards*/}
         <div className='w-full flex space-x-5 overflow-x-scroll p-10
-        snap-x snap-mandatory '>
+        snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 
+        scrollbar-thumb-[#F7AB]/80 scrollbar-thin '>
             <ExperienceCards/>
             <ExperienceCards/>
             <ExperienceCards/>
