@@ -1,3 +1,5 @@
+## Description
+
 This is my portfolio website. It describes:
 - Who i am
 - My experience
@@ -11,9 +13,12 @@ By ** Jackie Njoroge **
 - Nextjs -> user interface
 - Tailwind css -> style the user interface
 - Framer motion -> add animations to the website
+- Sanity -> CMS for backend
+- Vercel -> Deployment
 
 #### Requirements
 - Visual studio code
+- Github
 
 #### Setup instruction
 
