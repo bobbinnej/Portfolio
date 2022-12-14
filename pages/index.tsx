@@ -7,6 +7,8 @@ import Experience from '../components/Experience'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import ContactMe from '../components/ContactMe'
+import Link from 'next/link'
+import { SocialIcon } from 'react-social-icons';
 
 export default function Home() {
   return (
@@ -46,6 +48,15 @@ export default function Home() {
       <section id='contact'className='snap-start'>
         <ContactMe/>
       </section>
+
+      <Link href='#hero'>
+      <footer className='cursor-pointer sticky bottom-5 w-full  flex justify-end px-20'>
+        <div>
+          <img src='https://cdn-icons-png.flaticon.com/512/1633/1633288.png' alt='footer image'
+          className='h-10 w-10 filter grayscale  hover:grayscale-0 rounded-full'/>
+        </div>
+      </footer>
+      </Link>
 
     </div>
   )
