@@ -20,7 +20,7 @@ By ** Jackie Njoroge **
 - Visual studio code
 - Github
 
-#### Setup instruction
+## Setup  installation instruction
 
 - git clone https://github.com/bobbinnej/Portfolio.git
 - cd modern-portfolio
