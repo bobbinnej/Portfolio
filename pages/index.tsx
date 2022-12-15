@@ -53,7 +53,7 @@ export default function Home() {
       <footer className='cursor-pointer sticky bottom-5 w-full  flex justify-end px-20'>
         <div>
           <img src='https://cdn-icons-png.flaticon.com/512/1633/1633288.png' alt='footer image'
-          className='h-10 w-10 filter grayscale  hover:grayscale-0 rounded-full'/>
+          className='h-10 w-10 hover:bg-[#F7AB] rounded-full'/>
         </div>
       </footer>
       </Link>
