@@ -1,14 +1,14 @@
 import type { NextApiRequest,NextApiResponse } from "next";
 import { groq } from "next-sanity";
 import { sanityClient } from "../../sanity";
-import { Social } from "../../typings";
+import { PageInfo } from "../../typings";
 
-// get all socials
+// get all page info
 const query= groq`
-*[_type == "social"]
+*[_type == "pageInfo"][0]
 `
 type Data = {
-   socials: Social[]
+   pageInfo: PageInfo[]
   }
   
   export default async function handler(
@@ -16,7 +16,7 @@ type Data = {
     res: NextApiResponse<Data>
   ) {
 
-    const socials: Social[] = await sanityClient.fetch(query);
-    res.status(200).json({ socials })
+    const pageInfo: PageInfo[] = await sanityClient.fetch(query);
+    res.status(200).json({ pageInfo })
   }
   

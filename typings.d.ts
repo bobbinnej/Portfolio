@@ -63,7 +63,7 @@ export interface Project extends SanityBody{
 }
 
 // experience
-export interface Experince extends SanityBody{
+export interface Experience extends SanityBody{
     _type:"experience";
     companyImage:Image;
     company:string;
