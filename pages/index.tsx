@@ -46,7 +46,7 @@ export default function Home({pageInfo,experiences,skills,socials,projects}:Prop
 
     
       <section id='about' className='snap-start'>
-        <About/>
+        <About pageInfo={pageInfo}/>
       </section>
 
       
