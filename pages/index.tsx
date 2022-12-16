@@ -20,7 +20,7 @@ import WorkExperience from '../components/WorkExperience'
 
 type Props = {
 
-  pageInfo:PageInfo[];
+  pageInfo:PageInfo;
   experiences:Experience[];
   skills:Skill[];
   socials:Social[];
@@ -40,7 +40,7 @@ export default function Home({pageInfo,experiences,skills,socials,projects}:Prop
         <Header socials={socials}/>
     
       <section id='hero' className='snap-start'>
-        <Hero/>
+        <Hero pageInfo={pageInfo}/>
       
       </section>
 
@@ -81,7 +81,7 @@ export default function Home({pageInfo,experiences,skills,socials,projects}:Prop
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () =>{
-  const pageInfo: PageInfo[]= await fetchPageInfo();
+  const pageInfo: PageInfo= await fetchPageInfo();
   const experiences:Experience[] = await fetchExperience();
   const skills:Skill[] = await fetchSkills();
   const socials:Social[] = await fetchSocials();
