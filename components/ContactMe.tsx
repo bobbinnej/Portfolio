@@ -40,7 +40,7 @@ export default function ContactMe({pageInfo}: Props) {
              decoration-[#F7AB]/10"
           >
             {" "}
-            Let's Talk
+            Lets Talk
           </span>
         </h4>
 

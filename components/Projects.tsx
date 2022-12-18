@@ -8,7 +8,7 @@ type Props = {
   projects:Project[];
 };
 
-export default function ({projects}: Props) {
+export default function Projects({projects}: Props) {
   return (
     <motion.div
     initial={{
@@ -40,6 +40,7 @@ export default function ({projects}: Props) {
       >
         {projects?.map((project, i) => (
           <div
+          key={project._id}
             className="flex-shrink-0 snap-center w-screen space-y-5
             md:space-y-10
           flex flex-col items-center justify-center p-20 h-screen"

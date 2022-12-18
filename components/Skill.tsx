@@ -7,8 +7,7 @@ type Props = {
   directionLeft?:boolean;
 }
 
-export default function 
-({ skill, directionLeft}: Props) {
+ function Skill({ skill, directionLeft}: Props) {
   return (
     <div className='cursor pointer flex group relative 
     xl:top-[100px]  top-10 '>
@@ -39,5 +38,7 @@ export default function
       </div>
       
     </div>
-  )
+  );
 }
+
+export default Skill;
