@@ -1,11 +1,14 @@
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion"
+import { Project } from "../typings";
+import { urlFor } from "../sanity";
 
-type Props = {};
+type Props = {
+  projects:Project[];
+};
 
-export default function ({}: Props) {
-  const projects = [1, 2, 3, 4, 5];
+export default function ({projects}: Props) {
   return (
     <motion.div
     initial={{
@@ -18,12 +21,13 @@ export default function ({}: Props) {
       duration:1.5
     }}
       className=" h-[1000px]  xl:h-[1000px] md:h-[1500px] relative 
-    flex flex-col justify-evenly mx-auto max-w-full md:flex-row items-center z-0"
+    flex flex-col justify-evenly mx-auto max-w-full md:flex-row items-center z-0
+    "
     >
       <h3
         className="uppercase text-gray-500 tracking-[18px]
         md:tracking-[20px] xl:tracking-[20px] text-sm
-        md:text-2xl xl:text-2xl absolute top-[25%] xl:top-[27%] md:top-[22%] "
+        md:text-2xl xl:text-2xl absolute top-[25%] xl:top-[26%] md:top-[22%] "
       >
         Projects
       </h3>
@@ -34,7 +38,7 @@ export default function ({}: Props) {
       overflow-y-hidden snap-x snap-mandatory z-20 xl:top-[8%] md:top-[2%] top-[4%] 
       scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB]/80 scrollbar-thin"
       >
-        {projects.map((project, i) => (
+        {projects?.map((project, i) => (
           <div
             className="flex-shrink-0 snap-center w-screen space-y-5
             md:space-y-10
@@ -56,7 +60,7 @@ export default function ({}: Props) {
             viewport={{
               once:true
             }}
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQ_bRzbHJvfkiPMJ_2JVgjoDsAyDwFBYKgg&usqp=CAU"
+              src={urlFor(project?.image).url()}
               className="xl:w-[500px] md:w-[1000px] object-cover "
             />
 
@@ -65,12 +69,30 @@ export default function ({}: Props) {
                 <span className="underline decoration-[#F7AB]/50">
                   Case study of {i + 1} of {projects.length}:
                 </span> &nbsp;
-                Uber Clone
+                {project?.title}
               </h4>
 
+              <div className="flex items-center space-x-2 justify-center">
+                {project?.technologies.map((technology)=>(
+                  <img
+                  key={technology._id}
+                  src={urlFor(technology.image).url()}
+                  alt="technologies used"
+                  className="h-5 w-5 xl:h-[30px] xl:w-[30px]"/>
+                ))}
+              </div>
+
+              <div className="text-gray-400 cursor-pointer md:text-[20px] xl:text-[20px] text-[12px]">
+               <span className="text-[#F7AB]">Link:</span> &nbsp; 
+            
+               {project?.linkToBuild}
+               
+              </div>
+
                <div>
-                <p className="text-center md:text-left md:text-[25px] xl:text-[20px] text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
-                  but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                <p className="text-center md:text-left md:text-[25px] xl:text-[20px] text-sm">
+                
+                  {project?.summary} </p>
                </div>
             </div>
           </div>

@@ -1,9 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Skill from "./Skill";
-type Props = {};
+import {Skill as SkillType}  from '../typings';
+type Props = {
+  skills:SkillType[];
+};
 
-export default function Skills({}: Props) {
+export default function Skills({skills}: Props) {
   return (
     <motion.div
     initial={{
@@ -15,7 +18,7 @@ export default function Skills({}: Props) {
     transition={{
         duration:1.5
     }}
-      className=" xl:h-[400px] md:h-[1000px] h-[600px] relative flex flex-col xl:flex-row
+      className=" xl:h-[600px] md:h-[1200px] h-[700px] relative flex flex-col xl:flex-row
     md:text-left text-center  justify-evenly xl:space-y-0
     mx-auto items-center"
     >
@@ -31,17 +34,14 @@ export default function Skills({}: Props) {
 
       <div className="grid grid-cols-3 gap-3 md:gap-5 xl:gap-5
        md:grid-cols-3 xl:grid-cols-4">
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
-        <Skill/>
+        {skills?.slice(0,skills.length/2).map((skill)=>(
+          <Skill key={skill._id} skill={skill}/>
+        ))}
+
+        {skills?.slice(skills.length/2).map((skill)=>(
+          <Skill key={skill._id} skill={skill} directionLeft/>
+        ))}
+        
        
       </div>
     </motion.div>

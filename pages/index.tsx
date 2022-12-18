@@ -32,7 +32,7 @@ export default function Home({pageInfo,experiences,skills,socials,projects}:Prop
   return (
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory
     overflow-y-scroll overflow-x-hidden z-0
-    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB]/80' >
+    scrollbar scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB]/80' >
       <Head>
         <title>Jackies Portfolio</title>      
       </Head>
@@ -51,27 +51,27 @@ export default function Home({pageInfo,experiences,skills,socials,projects}:Prop
 
       
        <section id='experience' className='snap-start '>
-        <WorkExperience/>
+        <WorkExperience experiences={experiences}/>
        </section>
       
       <section id='skills' className='snap-start '>
-        <Skills />
+        <Skills skills={skills} />
       </section >
       
      
        <section id='projects' className='snap-center'>
-        <Projects/>
+        <Projects projects={projects}/>
        </section>
-      {/**Contact me section */}
+      
       <section id='contact'className='snap-start'>
-        <ContactMe/>
+        <ContactMe pageInfo={pageInfo}/>
       </section>
 
       <Link href='#hero'>
-      <footer className='cursor-pointer sticky bottom-5 w-full  flex justify-end px-20'>
+      <footer className='cursor-pointer sticky bottom-6 w-full  flex justify-end px-12'>
         <div>
-          <img src='https://cdn-icons-png.flaticon.com/512/1633/1633288.png' alt='footer image'
-          className='h-10 w-10 hover:bg-[#F7AB] rounded-full'/>
+          <img src='https://cdn-icons-png.flaticon.com/128/4113/4113413.png' alt='footer image'
+          className='h-8 w-8 hover:bg-[#F7AB] rounded-full'/>
         </div>
       </footer>
       </Link>

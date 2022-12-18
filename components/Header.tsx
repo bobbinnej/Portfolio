@@ -9,7 +9,7 @@ type Props = {
 
 export default function Header({ socials }: Props) {
   return (
-    <div className="sticky top-0 ">
+    <div className="sticky top-0  ">
       <header
         className=" flex items-start justify-between max-w-3xl mx-auto
         z-20 xl:items-center p-5  "
